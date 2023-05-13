@@ -1,0 +1,15 @@
+[all:vars]
+ansible_connection = local
+
+[jinja_spine]
+198.18.4.202
+
+[jinja2_leaf]
+192.18.4.104]
+
+[spine]
+192.18.4.101
+192.18..4.103
+
+[spine]
+192.18.4.201

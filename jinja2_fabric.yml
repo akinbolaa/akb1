@@ -1,0 +1,14 @@
+---
+#  - hosts: jinja2_spine
+#    connection: local
+#    roles:
+#      jinja2_spine
+
+
+#---
+- name: template building
+  hosts: spine 
+
+  tasks:
+    - template: src=templates/spine.j2 dest=configs/{{ inventory_hostname}}.cfg
+      delegate_to: local
